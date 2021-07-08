@@ -1,0 +1,31 @@
+@import "./src/styles/bootstrap";
+
+.text {
+  a:not(.btn) {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .text-size-large,
+  .text-size-xlarge {
+    font-size: 34px;
+    font-family: $font-medium;
+    line-height: 39px;
+  }
+
+  .text-size-xlarge {
+    font-size: 57px;
+    line-height: 47px;
+  }
+
+  a.btn {
+    display: inline;
+  }
+}

@@ -1,0 +1,37 @@
+@import "./src/styles/bootstrap";
+
+.two-column {
+  a:not(.btn) {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &.split-push-right {
+    > div {
+      width: 200px;
+    }
+  }
+
+  .text-size-large,
+  .text-size-xlarge {
+    font-size: 34px;
+    font-family: "GTMedium";
+    line-height: 39px;
+  }
+
+  .text-size-xlarge {
+    font-size: 57px;
+    line-height: 47px;
+  }
+
+  a.btn {
+    display: inline;
+  }
+}

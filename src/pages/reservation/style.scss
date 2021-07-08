@@ -1,0 +1,105 @@
+.reservation-form-container {
+  .title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .tickets-number {
+    display: flex;
+    .increase-decrease {
+      padding: 4px 11px;
+      border: 1px solid;
+      font-size: 19px;
+      cursor: pointer;
+      width: 38px;
+      text-align: center;
+    }
+    .number {
+      margin: 0px 25px;
+      font-size: 24px;
+    }
+  }
+
+  .calendar-container {
+    .calendar {
+      .react-calendar__tile--now {
+        background: rgba(0, 0, 0, 0);
+      }
+      .react-calendar__tile--active {
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid;
+        color: rgba(0, 0, 0, 0.87);
+      }
+      .react-calendar__month-view__days__day--weekend {
+        color: rgba(0, 0, 0, 0.87);
+      }
+    }
+  }
+
+  select {
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  .description {
+    margin-top: 20px;
+    textarea {
+      width: 100%;
+    }
+  }
+
+  input.has-error, textarea.has-error, select.has-error, .availableTime label.has-error {
+    border: 2px solid red;
+  }
+  div.has-error {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  .availableTime {
+    display: flex;
+    z-index: -1;
+    overflow: auto;
+    padding: 10px 0px;
+    label {
+      margin-right: 10px;
+      color: var(--bs-blue);;
+      padding: 20px;
+      background: white;
+      border: 1px solid black;
+    }
+    input[type='radio'] {
+      display: none !important;
+    }
+    label.selected {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .chosen-date {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--bs-blue);
+  }
+
+  .hint {
+    font-size: 12px;
+    text-align: center;
+    color: var(--bs-blue);
+  }
+
+  .submitbutton-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .submitbutton {
+      width: 70%;
+      padding: 6px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      color: var(--bs-blue);
+      outline: none;
+      padding: 12px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "./src/styles/bootstrap";
+
+.cards {
+  .card {
+    border: none;
+    background: none;
+    margin: 0 10px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+    
+    .label {
+      text-transform: uppercase;
+      margin: 2px 3px 10px;
+      font-size: 1rem;
+      font-family: $font-medium;
+    }
+    
+    .card-text {
+      padding-top: 8px;
+    }
+
+    .title {
+      text-transform: uppercase;
+      font-family: $font-medium;
+      font-size: 1.5rem;
+    }
+
+    .subtitle {
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+      text-transform: uppercase;
+      padding: 7px 0;
+      margin: 7px 0;
+      font-size: 1rem;
+      font-family: $font-medium;
+    }
+
+    a:not(.btn) {
+      text-decoration: none;
+      padding-bottom: 1px;
+      border-bottom: 2px solid black;
+    }
+
+    a.btn {
+      color: red;
+    }
+
+    &.card-2 {
+      min-width: 50%;
+    }
+
+    &.card-3 {
+      min-width: 30%;
+    }
+  }
+}

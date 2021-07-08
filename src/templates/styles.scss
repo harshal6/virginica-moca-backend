@@ -1,0 +1,264 @@
+@import "./src/styles/bootstrap";
+.page {
+    background-color: #f4f9ff;
+    .wrapper {
+        margin-top: 30px;
+    }
+}
+
+.bg-container {
+    width: 25%;
+    margin-left: 75%;
+    height: 100%;
+    position: fixed;
+    background: url('../images/VMOCA_logoWatermark.svg');
+    background-size: 120%;
+    background-position: 150px top;
+    background-repeat: repeat-y;
+    z-index: 0;
+    opacity: 0.06;
+}
+
+@include media-breakpoint-down(lg) {
+    .wrapper {
+        padding-top: 110px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .bg-container {
+        width: 33%;
+        margin-left: 67%;
+        background-size: contain;
+        background-position: left top;
+    }
+}
+
+.home-intro {
+    background: url('../images/home-intro.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    padding-top: 50px;
+    height: 630px;
+    margin-bottom: 40px;
+    .home-intro-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .home-intro {
+        height: 640px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .home-intro {
+        height: 660px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .home-intro {
+        height: 760px;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .home-intro {
+        height: 860px;
+    }
+}
+
+@include media-breakpoint-up(xxxl) {
+    .home-intro {
+        height: 1100px;
+    }
+}
+
+.event-title {
+    a:not(.btn) {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-bottom: 1px;
+        border-bottom: 2px solid black;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+    a.btn {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.event-row:not(:last-of-type) {
+    border-bottom: 3px solid black;
+}
+
+.exhibit {
+    .headline {
+        h4 {
+            margin-bottom: 6px;
+            line-height: 36px;
+        }
+    }
+    .has-admission {
+        a {
+            color: black;
+        }
+    }
+    .artists {
+        a {
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+    .videos {
+        .text-size-large {
+            font-size: 57px;
+            font-family: $font-medium;
+            line-height: 47px;
+            margin-bottom: 30px;
+        }
+    }
+    .catalog {
+        .btn {
+            border: 1px solid black;
+        }
+        .catalog-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/////////////////////////////////
+// EVENTS
+.events {
+    p.text-size-large {
+        font-size: 34px;
+        line-height: 39px;
+        font-family: $font-medium;
+        a {
+            border-bottom: 2px solid black;
+        }
+    }
+    input.form-control {
+        border-color: black !important;
+        background: #F4F4F1 !important;
+        border-radius: 0 !important;
+        text-transform: uppercase;
+    }
+    .event-title {
+        color: black;
+    }
+    .calendar {
+        position: absolute;
+        top: 20px;
+        left: 20;
+        z-index: 100;
+    }
+    a,
+    a.learn-more,
+    a:not(.btn) {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-bottom: 1px;
+        // border-bottom: 2px solid black;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+    a.learn-more {
+        border-bottom: 2px solid black;
+    }
+    .events-types-audiences {
+        a {
+            border-bottom: 2px solid black;
+        }
+    }
+    .featured-event {
+        margin-bottom: 30px;
+        border-bottom: 3px solid black;
+    }
+}
+
+.featured-event {
+    .react-calendar__month-view__days__day--weekend {
+        color: black;
+    }
+    .react-calendar__tile--active {
+        background: transparent;
+    }
+    .react-calendar__tile--active:enabled:hover,
+    .react-calendar__tile--active:enabled:focus {
+        background: #e6e6e6;
+    }
+}
+
+.event {
+    .form-select {
+        background-color: #F4F4F1;
+        border: 1px solid #000000;
+        border-radius: 0;
+    }
+}
+
+.exhibits {
+    a:not(.btn) {
+        color: black;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+    .jump-links {
+        a:not(.btn) {
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-bottom: 2px solid black;
+            line-height: 18px;
+            &:hover {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+    #upcoming {
+        .image {
+            .caption-wrapper {
+                width: 100%;
+                max-width: 100%;
+                flex: 0 0 auto;
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+#artist {
+    .artist-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-family: $font-regular;
+    }
+    .text-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        h4 {
+            font-family: $font-regular !important;
+            font-size: 1.5rem !important;
+        }
+    }
+}

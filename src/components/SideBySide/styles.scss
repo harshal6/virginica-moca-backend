@@ -1,0 +1,23 @@
+@import "./src/styles/bootstrap";
+
+.side-by-side {
+  .col-md-5 {
+    .gatsby-image-wrapper {
+      width: 95%;
+    }
+  }
+
+  a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+  }
+}

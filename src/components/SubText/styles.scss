@@ -1,0 +1,22 @@
+@import "./src/styles/bootstrap";
+
+.subtext {
+  a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid black;
+    font-family: $font-bold;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  h5 {
+    font-family: $font-medium;
+    font-size: 16px;
+    padding-bottom: 7px;
+  }
+}

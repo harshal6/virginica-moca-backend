@@ -1,0 +1,82 @@
+@import "./src/styles/bootstrap";
+.module {
+    .pre-headline {
+        margin-bottom: -5px;
+    }
+    .headline {
+        border-bottom: 9px solid black;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        h2,
+        h4 {
+            // display: inline-block;
+            color: black;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-family: "GTMedium";
+            &.headline-size-medium {
+                font-size: 34px;
+            }
+            &.headline-size-large {
+                font-size: 56px;
+            }
+        }
+        h3 {
+            font-size: 56px;
+            line-height: 58px;
+        }
+        h4 {
+            font-size: 34px;
+            line-height: 36px // display: block;
+        }
+        &.small {
+            padding-bottom: 7px;
+        }
+        span {
+            border-top: 6px solid black;
+            border-right: 6px solid black;
+            width: 2rem;
+            height: 1rem;
+            margin-bottom: 13px;
+            margin-left: 8px;
+        }
+        &.viewlink {
+            justify-content: space-between;
+            a {
+                color: black;
+                font-size: 18px;
+                text-decoration: none;
+                padding-bottom: 0;
+                border-bottom: 2px solid black;
+                font-family: $font-bold;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .module {
+        .container {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .headline {
+            border-bottom: 9px solid black;
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            h3 {
+                font-size: 56px;
+                line-height: 60px;
+            }
+            h4 {
+                font-size: 34px;
+                line-height: 59px // display: block;
+            }
+        }
+    }
+}

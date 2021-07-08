@@ -1,0 +1,24 @@
+@import "./src/styles/bootstrap";
+
+.image {
+
+  .col-md-5 & {
+    .col-md-7.offset-md-5.px-md-0 {
+      max-width: 100% !important;
+      width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+  }
+  .caption {
+    font-size: 12px;
+    color: #212529;
+  }
+  
+  
+  .card-img-top {
+    
+    border-radius: 0px !important;
+  }
+}

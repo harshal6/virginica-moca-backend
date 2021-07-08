@@ -1,0 +1,66 @@
+@import "./src/styles/bootstrap";
+
+.create-account {
+  input.form-control,
+  select {
+    border: 2px solid black;
+    border-radius: 0;
+    margin-bottom: 15px;
+    
+    &::placeholder {
+      color: $body-color;
+    }
+  }
+  
+  label {
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+  }
+  
+  h6 {
+    font-family: $font-medium;
+    font-size: 23px;
+    padding-bottom: 6px;
+    border-bottom: none;
+  }
+  
+  ::placeholder {
+    text-transform: uppercase;
+  }
+
+  input.form-control {
+    background: none;
+  }
+
+  .form-select {
+    background-color: transparent;
+  }
+
+  hr {
+    height: 4px;
+    background-color: black;
+  }
+
+  .btn {
+    width: 100%;
+    border: 2px solid black;
+    margin: 25px 0;
+  }
+  
+  a {
+    color: $body-color;
+    
+    &:hover {
+      color: black;
+    }
+  }
+
+  p {
+    margin-bottom: 0rem;
+  }
+
+  .heading2 {
+    font-size: 15px;
+     margin-bottom: 37px;
+  }
+}

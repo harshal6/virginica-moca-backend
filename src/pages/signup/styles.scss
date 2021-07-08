@@ -1,0 +1,32 @@
+.formik-form-container {
+  .form-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .input-container {
+    width: 100%;
+    input {
+      width: 100%;
+      outline: none;
+      padding: 5px;
+    }
+    input.has-error {
+      border: 2px solid red;
+    }
+    div.has-error {
+      color: red;
+      margin-bottom: 10px;
+    }
+    div.no-error{
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+  }
+  .submitbutton {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    outline: none;
+  }
+}

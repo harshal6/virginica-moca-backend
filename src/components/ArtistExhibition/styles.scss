@@ -1,0 +1,20 @@
+@import "./src/styles/bootstrap";
+
+.artist-exhibition {
+  position: relative;
+  .artist-exhibition-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .artist-exhibition-content {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  a {
+    color: black;
+  }
+}

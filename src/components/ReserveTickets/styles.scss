@@ -1,0 +1,39 @@
+@import "./src/styles/bootstrap";
+
+.reserve-tickets {
+  margin: 100px 0;
+  hr {
+    margin: 20px 0;
+    border: 2px solid black !important;
+  }
+
+  .btn {
+    border: 1px solid black;
+  }
+
+  .incrementor {
+    input {
+      background: none;
+      border: none;
+      text-align: center;
+      padding: 7px 15px;
+    }
+    span {
+      background-color: black;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .times {
+    button {
+      margin-right: 15px;
+    }
+  }
+}

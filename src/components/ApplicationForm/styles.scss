@@ -1,0 +1,20 @@
+@import "./src/styles/bootstrap";
+
+.application-form {
+  form {
+    .form-group {
+      margin-bottom: 20px;
+      textarea.form-control,
+      input.form-control,
+      select.form-select {
+        background-color: #F4F4F1;
+        border: 1px solid #000000;
+        border-radius: 0;
+      }
+
+      .react-date-picker {
+        display: block;
+      }
+    }
+  }
+}

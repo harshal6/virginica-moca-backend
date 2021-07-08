@@ -1,0 +1,25 @@
+@import "./src/styles/bootstrap";
+
+.pricing-cards {
+  .btn {
+    border: 1px solid black;
+  }
+}
+
+.pricing-card {
+  h4 {
+    font-size: 1rem;
+    font-family: $font-medium;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+  }
+  
+  h5.price {
+    font-family: $font-regular;
+
+  }
+  
+  .details {
+    padding-bottom: 30px;
+  }
+}

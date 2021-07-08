@@ -1,0 +1,50 @@
+@import "./src/styles/bootstrap";
+
+.accordions {
+  padding-top: 20px;
+
+  .accordion {
+    .card {
+      background: none !important;
+      border: none;
+      border-radius: 0px !important;
+      border-bottom: 2px solid black;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .card-header {
+      background: none !important;
+      border-radius: none;
+      border-bottom: none;
+      padding: 0;
+      margin-bottom: 10px;
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 7px;
+        right: 0px;
+      }
+    }
+
+    .card-body {
+      padding-left: 0;
+
+      p {
+        a {
+          color: black;
+          font-weight: bold;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding-bottom: 1px;
+          border-bottom: 2px solid black;
+          cursor: pointer;
+      
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
