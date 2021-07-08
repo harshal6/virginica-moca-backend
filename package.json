@@ -1,6 +1,9 @@
 {
     "name": "virginia-moca",
     "version": "1.0.0",
+    "engines": {
+        "node": "14.x"
+    },
     "description": "public website for virginia moca",
     "main": "index.js",
     "scripts": {
